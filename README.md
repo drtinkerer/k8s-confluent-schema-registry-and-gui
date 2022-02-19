@@ -38,3 +38,10 @@ Various properties of deployment can be controlled by Environment variables to t
  
  Other important Environment variable being `SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS` which needs to be provided with Kafka broker listeners addresse.
  `SCHEMA_REGISTRY_KAFKASTORE_TOPIC` will represent the Kafka topic where schemas are supposed to be stored.
+ 
+ # Deployment
+ 
+ To deploy, just apply
+ `kubectl apply -f k8manifests`
+ 
+ This will expose Schema registry service on arbitrary 30001 port and its corresponding GUI web application on port 30000 as NodePort services.
