@@ -1,0 +1,1 @@
+# k8s-confluent-schema-registry-and-gui
